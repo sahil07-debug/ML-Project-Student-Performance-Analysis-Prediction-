@@ -38,7 +38,7 @@ class datatransformation:
                 steps=[
                     ("imputer",SimpleImputer(strategy="most_frequent")),
                     ("oneHotencoder",OneHotEncoder()),
-                    ("scalar",StandardScaler(with_mean=False))
+                    ("scalar",StandardScaler(with_mean=False)) 
                 ]
             )
 
