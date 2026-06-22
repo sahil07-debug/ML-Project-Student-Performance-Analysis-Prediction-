@@ -15,7 +15,7 @@ from src.utils import save_object
 
 @dataclass
 class datatransformationConfig:
-    preprocessor_obj_file=os.path.join('artifacts',"preprocessor.pkl")
+    preprocessor_obj_file_path: str = os.path.join('artifacts',"preprocessor.pkl")
 
     
 class datatransformation:
@@ -29,16 +29,16 @@ class datatransformation:
             
             num_pipeline=Pipeline(
                 steps=[
-                    ("imputer",SimpleImputer(strategy="median"),
-                     "scalar",StandardScaler())
-                ]
-            )
+                      ("imputer", SimpleImputer(strategy="median")),
+                      ("scalar", StandardScaler())
+                      ]
+                              )
 
             categorical_pipeline=Pipeline(
                 steps=[
                     ("imputer",SimpleImputer(strategy="most_frequent")),
                     ("oneHotencoder",OneHotEncoder()),
-                    ("scalar",StandardScaler())
+                    ("scalar",StandardScaler(with_mean=False))
                 ]
             )
 
