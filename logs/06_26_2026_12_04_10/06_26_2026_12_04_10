@@ -1,0 +1,11 @@
+[2026-06-26 12:04:11,447]97 werkzeug-WARNING- * Debugger is active!
+[2026-06-26 12:04:11,565]97 werkzeug-INFO- * Debugger PIN: 138-527-778
+[2026-06-26 12:04:29,148]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:04:29] "GET / HTTP/1.1" 200 -
+[2026-06-26 12:04:32,607]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:04:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-06-26 12:05:41,849]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:05:41] "GET /predict_data HTTP/1.1" 200 -
+[2026-06-26 12:06:11,357]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:06:11] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+[2026-06-26 12:06:15,872]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:06:15] "GET /predict_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2026-06-26 12:06:18,186]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:06:18] "GET /predict_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2026-06-26 12:06:19,270]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:06:19] "GET /predict_data?__debugger__=yes&cmd=resource&f=console.png&s=D1xiC6TaQfNktjfyxeJs HTTP/1.1" 200 -
+[2026-06-26 12:06:19,306]97 werkzeug-INFO-127.0.0.1 - - [26/Jun/2026 12:06:19] "GET /predict_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2026-06-26 12:06:42,020]97 werkzeug-INFO- * Detected change in 'E:\\machine learning\\code\\end-to-end_ml_projects\\app.py', reloading
